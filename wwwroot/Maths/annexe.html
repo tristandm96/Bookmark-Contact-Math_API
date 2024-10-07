@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math API Endpoints</title>
+    <link rel="stylesheet" href="/Maths/css/math.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">GET: Maths endpoint</div>
+        <div class="description">List of possible query strings:</div>
+
+        <div class="endpoint">
+            ? op = + &amp; x = number &amp; y = number<br>
+            return {"op":"+","x":number,"y":number,"value": x + y}
+        </div>
+
+        <div class="endpoint">
+            ? op = - &amp; x = number &amp; y = number<br>
+            return {"op":"-","x":number,"y":number,"value": x - y}
+        </div>
+
+        <div class="endpoint">
+            ? op = * &amp; x = number &amp; y = number<br>
+            return {"op":"*","x":number,"y":number,"value": x * y}
+        </div>
+
+        <div class="endpoint">
+            ? op = / &amp; x = number &amp; y = number<br>
+            return {"op":"/","x":number,"y":number,"value": x / y}
+        </div>
+
+        <div class="endpoint">
+            ? op = % &amp; x = number &amp; y = number<br>
+            return {"op":"%","x":number,"y":number,"value": x % y}
+        </div>
+
+        <div class="endpoint">
+            ? op = ! &amp; n = integer<br>
+            return {"op":"!","n":integer,"value": n!}
+        </div>
+
+        <div class="endpoint">
+            ? op = p &amp; n = integer<br>
+            return {"op":"p","n":integer,"value": true if n is a prime number}
+        </div>
+
+        <div class="endpoint">
+            ? op = np &amp; n = integer<br>
+            return {"op":"np","n":integer,"value": nth prime number}
+        </div>
+    </div>
+
+</body>
+</html>
