@@ -1,3 +1,4 @@
+
 $('#submitUrl').on("click", async function () {
     let url = $('#urlValue').val() + '/api/maths'
     $('#Main').empty();
