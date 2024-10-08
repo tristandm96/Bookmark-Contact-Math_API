@@ -6,7 +6,7 @@ export default class MathsController extends Controller {
     constructor(HttpContext) {
         super(HttpContext);
     }
-    async getMath() {
+     getMath() {
         // init instance variable
         let nbOp = Object.keys(this.HttpContext.path.params).length;
         let data = this.HttpContext.path.params;

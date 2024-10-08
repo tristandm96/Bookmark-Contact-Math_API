@@ -16,7 +16,7 @@ export const API_EndPoint = async function (HttpContext) {
                         if(controllerName === "MathsController")
                               await controller.getMath()
                             else{
-                                 await controller.get(HttpContext.path.id);
+                                controller.get(HttpContext.path.id);
                             }
                         return true;
                     case 'POST':
